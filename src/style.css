@@ -1,0 +1,120 @@
+html {
+    background-image: url(../public/images/todo-bgv.PNG);
+}
+
+body {
+  color: white;
+  text-rendering: optimizeSpeed;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+::placeholder {
+    color: white;
+    opacity: 1; /* Firefox */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+.App {
+  padding: 1rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.todo-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 600px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.input-wrapper {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 600px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.input-wrapper input {
+  flex: 1; /* Use flex to make the input and button share the available width */
+}
+
+.todo-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 600px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.todos-wrapper {
+  margin-bottom: 2.5rem;
+}
+
+.todo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+input, select, textarea{
+    color: white;
+}
+
+input {
+  padding: 0.8em;
+  border-radius: 25px 0 0 25px;
+}
+
+button {
+  padding: 0.8em;
+  cursor: pointer;
+  border-radius: 0 25px 25px 0;
+}
+
+input,
+button {
+  font-size: 15px;
+  appearance: none;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.23);
+}
+
+.add-button {
+  color: rgba(255, 255, 255, 0.75);
+  border-left: none;
+}
+
+.delete-button {
+  color: rgba(255, 255, 255, 0.75)
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+  margin-bottom: 0px;
+}
+
+li {
+  width: 600px;
+  padding: 0.8em;
+  text-align: left;
+  margin-bottom: 0.5rem;
+  background: rgba(255, 255, 255, 0.23);
+  transition: all 0.3s ease-out;
+  border-left: 5px solid white;
+  border-radius: 25px 0 0 25px;
+}
+
+li:last-child {
+  margin-bottom: 0px;
+}
