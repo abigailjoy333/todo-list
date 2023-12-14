@@ -13,7 +13,7 @@ function TodoInput({ todo, setTodo, addTodo }) {
                 type="text"
                 name="todo"
                 value={todo}
-                placeholder="add a new quest"
+                placeholder="add something"
                 onChange={(e) => {setTodo(e.target.value)}}
                 onKeyDown={handleKeyDown}
             />
@@ -21,7 +21,7 @@ function TodoInput({ todo, setTodo, addTodo }) {
             className="add-button"
             onClick={addTodo}
         >
-            add
+            +
         </button>
       </div>
     )

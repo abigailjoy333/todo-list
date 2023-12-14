@@ -10,9 +10,7 @@ function TodoList({ list, remove }) {
 
                         <button
                             className="delete-button"
-                            onClick={() => {
-                                remove(entry)
-                            }}
+                            onClick={() => {remove(entry)}}
                         >
                             delete
                         </button>
